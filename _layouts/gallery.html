@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="gallery-header">
+    <div class="container">
+        <h1 class="gallery-title">{{ page.title | default: "Theme Gallery" }}</h1>
+        <p class="gallery-description">{{ page.description | default: "Discover beautiful Jekyll themes for your next
+            project" }}</p>
+
+        <!-- Category Filter -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Themes</button>
+            <button class="filter-btn" data-filter="Blog">Blog</button>
+            <button class="filter-btn" data-filter="Portfolio">Portfolio</button>
+            <button class="filter-btn" data-filter="Documentation">Documentation</button>
+            <button class="filter-btn" data-filter="Business">Business</button>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-content">
+    <div class="container">
+        <div class="theme-grid">
+            {% for theme in site.data.themes %}
+            {% include theme-card.html theme=theme %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{{ content }}

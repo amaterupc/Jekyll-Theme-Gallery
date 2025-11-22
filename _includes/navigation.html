@@ -1,0 +1,31 @@
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="{{ '/' | relative_url }}" class="nav-logo">
+            <span class="logo-icon">🎨</span>
+            <span class="logo-text">{{ site.title }}</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/about' | relative_url }}"
+                    class="nav-link {% if page.url contains 'about' %}active{% endif %}">
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com" class="nav-link" target="_blank" rel="noopener">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

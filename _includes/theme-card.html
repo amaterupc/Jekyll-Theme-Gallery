@@ -1,0 +1,46 @@
+<div class="theme-card" data-category="{{ include.theme.category }}">
+    <div class="theme-card-image">
+        <img src="{{ include.theme.preview_image }}" alt="{{ include.theme.name }} preview" loading="lazy">
+        <div class="theme-card-overlay">
+            <div class="theme-card-actions">
+                <a href="{{ include.theme.demo_url }}" class="btn btn-primary" target="_blank" rel="noopener">
+                    <span>Demo</span>
+                </a>
+                <a href="{{ include.theme.download_url }}" class="btn btn-secondary" target="_blank" rel="noopener">
+                    <span>Download</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme-card-content">
+        <div class="theme-card-header">
+            <h3 class="theme-card-title">{{ include.theme.name }}</h3>
+            <div class="theme-card-badges">
+                <span class="theme-card-category">{{ include.theme.category }}</span>
+                {% if include.theme.price %}
+                <span class="theme-card-price {{ include.theme.price | downcase }}">{{ include.theme.price }}</span>
+                {% endif %}
+            </div>
+        </div>
+
+        <p class="theme-card-description">{{ include.theme.description }}</p>
+
+        <div class="theme-card-meta">
+            <span class="theme-card-author">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 8a3 3 0 100-6 3 3 0 000 6zm0 1c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+                {{ include.theme.author }}
+            </span>
+        </div>
+
+        {% if include.theme.features %}
+        <ul class="theme-card-features">
+            {% for feature in include.theme.features limit:3 %}
+            <li>{{ feature }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</div>

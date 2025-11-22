@@ -1,0 +1,48 @@
+# Site Settings
+title: Jekyll Theme Gallery
+description: A curated collection of beautiful Jekyll themes
+baseurl: ""
+url: ""
+
+# Author
+author:
+  name: Theme Gallery
+  email: contact@example.com
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  themes:
+    output: true
+    permalink: /themes/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "themes"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
