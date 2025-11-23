@@ -1,6 +1,7 @@
 layout: default
 title: About
 description: Learn more about the Jekyll Theme Gallery
+permalink: /about/
 ---
 
 <div class="about-content" markdown="1">
