@@ -1,0 +1,27 @@
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Bundler
+.bundle/
+vendor/
+
+# macOS
+.DS_Store
+
+# Ruby/Rake
+*.gem
+*.rbc
+
+# Logs
+log/
+tmp/
+
+# Editors/IDE
+*.swp
+*.swo
+*.bak
+*.tmp
+.idea/
+.vscode/
