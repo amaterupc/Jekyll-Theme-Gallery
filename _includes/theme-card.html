@@ -1,6 +1,6 @@
 <div class="theme-card" data-category="{{ include.theme.category }}">
     <div class="theme-card-image">
-        <img src="{{ include.theme.preview_image }}" alt="{{ include.theme.name }} preview" loading="lazy">
+        <img src="{{ include.theme.preview_image | relative_url }}" alt="{{ include.theme.name }} preview" loading="lazy">
         <div class="theme-card-overlay">
             <div class="theme-card-actions">
                 <a href="{{ include.theme.demo_url }}" class="btn btn-primary" target="_blank" rel="noopener">
