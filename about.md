@@ -1,10 +1,9 @@
----
 layout: default
 title: About
 description: Learn more about the Jekyll Theme Gallery
 ---
 
-<div class="about-content">
+<div class="about-content" markdown="1">
 
 # About Jekyll Theme Gallery
 
