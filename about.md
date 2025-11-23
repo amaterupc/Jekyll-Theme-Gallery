@@ -4,7 +4,7 @@ description: Learn more about the Jekyll Theme Gallery
 permalink: /about/
 ---
 
-<div class="about-content" markdown="1">
+{: .about-content }
 
 # About Jekyll Theme Gallery
 
@@ -48,5 +48,3 @@ Have a theme you'd like to submit? We welcome contributions from the community! 
 ## Get Started
 
 Ready to build your Jekyll site? Head back to the [gallery](/) to find your perfect theme!
-
-</div>
