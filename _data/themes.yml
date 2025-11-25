@@ -1,111 +1,64 @@
-- name: Minimal Mistakes
-  description: A flexible two-column Jekyll theme perfect for building personal sites, blogs, portfolios, and project documentation
-  author: Michael Rose
-  category: Blog
-  price: Free
-  preview_image: /assets/images/themes/minimal-mistakes.png
-  demo_url: https://mmistakes.github.io/minimal-mistakes/
-  download_url: https://github.com/mmistakes/minimal-mistakes
-  features:
-    - Responsive navigation
-    - Multiple layouts
-    - SEO optimized
-    - Dark theme support
+- name: "Minima"
+  category: "Blog"
+  repo: "jekyll/minima"
+  image: "/assets/images/themes/minima.png"
 
-- name: Just the Docs
-  description: A modern, highly customizable, and easy-to-use documentation theme with powerful navigation
-  author: Patrick Marsceill
-  category: Documentation
-  price: Free
-  preview_image: /assets/images/themes/just-the-docs.png
-  demo_url: https://just-the-docs.com/
-  download_url: https://github.com/just-the-docs/just-the-docs
-  features:
-    - Multi-level navigation
-    - Built-in search
-    - Mobile responsive
-    - Customizable sidebar
+- name: "Cayman"
+  category: "Business"
+  repo: "pages-themes/cayman"
+  image: "/assets/images/themes/cayman.png"
 
-- name: Chirpy
-  description: A minimal, responsive, and feature-rich Jekyll theme for technical writing with excellent navigation
-  author: Cotes Chung
-  category: Blog
-  price: Free
-  preview_image: /assets/images/themes/chirpy.png
-  demo_url: https://chirpy.cotes.page/
-  download_url: https://github.com/cotes2020/jekyll-theme-chirpy
-  features:
-    - Sidebar navigation
-    - Dark mode
-    - Category & tag archives
-    - Syntax highlighting
+- name: "Hacker"
+  category: "Blog"
+  repo: "pages-themes/hacker"
+  image: "/assets/images/themes/hacker.png"
 
-- name: Beautiful Jekyll
-  description: A ready-to-use template for making beautiful websites quickly with navigation and customization options
-  author: Dean Attali
-  category: Blog
-  price: Freemium
-  preview_image: /assets/images/themes/beautiful-jekyll.png
-  demo_url: https://beautifuljekyll.com/
-  download_url: https://github.com/daattali/beautiful-jekyll
-  features:
-    - Navigation bar
-    - Disqus comments
-    - Google Analytics
-    - Easy customization
+- name: "Minimal"
+  category: "Simple"
+  repo: "pages-themes/minimal"
+  image: "/assets/images/themes/minimal.png"
 
-- name: TeXt Theme
-  description: A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc
-  author: Tian Qi
-  category: Portfolio
-  price: Free
-  preview_image: /assets/images/themes/text-theme-updated.png
-  demo_url: https://kitian616.github.io/jekyll-TeXt-theme/test/
-  download_url: https://github.com/kitian616/jekyll-TeXt-theme
-  features:
-    - Responsive navigation
-    - Multiple skins
-    - Article header
-    - Sidebar & TOC
+- name: "Modernist"
+  category: "Portfolio"
+  repo: "pages-themes/modernist"
+  image: "/assets/images/themes/modernist.png"
 
-- name: Hydejack
-  description: A boutique Jekyll theme with a focus on personal sites and blogs featuring a unique sidebar navigation
-  author: Florian Klampfer
-  category: Portfolio
-  price: Freemium
-  preview_image: /assets/images/themes/hydejack.png
-  demo_url: https://hydejack.com/
-  download_url: https://github.com/hydecorp/hydejack
-  features:
-    - Sidebar navigation
-    - Project pages
-    - Resume builder
-    - Dark mode
+- name: "Slate"
+  category: "Documentation"
+  repo: "pages-themes/slate"
+  image: "/assets/images/themes/slate.png"
 
-- name: Feeling Responsive
-  description: A flexible Foundation framework theme with customizable navigation for blogs and portfolios
-  author: Phlow
-  category: Business
-  price: Free
-  preview_image: /assets/images/themes/feeling-responsive.png
-  demo_url: https://phlow.github.io/feeling-responsive/
-  download_url: https://github.com/Phlow/feeling-responsive
-  features:
-    - Customizable navigation
-    - 7 header designs
-    - Foundation framework
-    - Responsive layout
+- name: "Tactile"
+  category: "Business"
+  repo: "pages-themes/tactile"
+  image: "/assets/images/themes/tactile.png"
 
-- name: Lanyon
-  description: A content-first blogging theme built on Poole with a toggleable sliding sidebar for navigation
-  author: Mark Otto
-  category: Documentation
-  price: Free
-  preview_image: /assets/images/themes/lanyon.png
-  demo_url: https://lanyon.getpoole.com/
-  download_url: https://github.com/poole/lanyon
-  features:
-    - Hidden sidebar nav
-    - Clean typography
-    - Built on Poole
-    - Minimal design
+- name: "Time Machine"
+  category: "Blog"
+  repo: "pages-themes/time-machine"
+  image: "/assets/images/themes/time-machine.png"
+
+- name: "Architect"
+  category: "Portfolio"
+  repo: "pages-themes/architect"
+  image: "/assets/images/themes/architect.png"
+
+- name: "Dinky"
+  category: "Blog"
+  repo: "pages-themes/dinky"
+  image: "/assets/images/themes/dinky.png"
+
+- name: "Leap Day"
+  category: "Blog"
+  repo: "pages-themes/leap-day"
+  image: "/assets/images/themes/leap-day.png"
+
+- name: "Merlot"
+  category: "Blog"
+  repo: "pages-themes/merlot"
+  image: "/assets/images/themes/merlot.png"
+
+- name: "Midnight"
+  category: "Blog"
+  repo: "pages-themes/midnight"
+  image: "/assets/images/themes/midnight.png"

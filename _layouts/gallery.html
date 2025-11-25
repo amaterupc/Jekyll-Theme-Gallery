@@ -10,11 +10,11 @@ layout: default
 
         <!-- Category Filter -->
         <div class="filter-container">
+            {% assign categories = site.data.themes | map: "category" | uniq | sort %}
             <button class="filter-btn active" data-filter="all">All Themes</button>
-            <button class="filter-btn" data-filter="Blog">Blog</button>
-            <button class="filter-btn" data-filter="Portfolio">Portfolio</button>
-            <button class="filter-btn" data-filter="Documentation">Documentation</button>
-            <button class="filter-btn" data-filter="Business">Business</button>
+            {% for category in categories %}
+            <button class="filter-btn" data-filter="{{ category }}">{{ category }}</button>
+            {% endfor %}
         </div>
     </div>
 </div>
