@@ -3,11 +3,12 @@
 {% assign repo_name = repo_path | split: "/" | last %}
 {% assign demo_url = "https://" | append: owner | append: ".github.io/" | append: repo_name | append: "/" %}
 {% assign download_url = "https://github.com/" | append: repo_path %}
-{% assign preview_image = include.theme.preview_image | default: "https://opengraph.githubassets.com/1/" | append: repo_path %}
+{% assign preview_image = include.theme.image | default: include.theme.preview_image | default: "https://opengraph.githubassets.com/1/" | append: repo_path %}
 
 <div class="theme-card" data-category="{{ include.theme.category }}">
     <div class="theme-card-image">
-        <img src="{{ preview_image }}" alt="{{ include.theme.name }} preview" loading="lazy">
+        {% assign is_absolute = preview_image | slice: 0,4 %}
+        <img src="{% if is_absolute == 'http' %}{{ preview_image }}{% else %}{{ preview_image | relative_url }}{% endif %}" alt="{{ include.theme.name }} preview" loading="lazy">
         <div class="theme-card-overlay">
             <div class="theme-card-actions">
                 <a href="{{ demo_url }}" class="btn btn-primary" target="_blank" rel="noopener">
