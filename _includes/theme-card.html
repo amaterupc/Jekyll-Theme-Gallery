@@ -3,7 +3,13 @@
 {% assign repo_name = repo_path | split: "/" | last %}
 {% assign demo_url = "https://" | append: owner | append: ".github.io/" | append: repo_name | append: "/" %}
 {% assign download_url = "https://github.com/" | append: repo_path %}
-{% assign preview_image = include.theme.image | default: include.theme.preview_image | default: "https://opengraph.githubassets.com/1/" | append: repo_path %}
+{% if include.theme.image %}
+  {% assign preview_image = include.theme.image %}
+{% elsif include.theme.preview_image %}
+  {% assign preview_image = include.theme.preview_image %}
+{% else %}
+  {% assign preview_image = "https://opengraph.githubassets.com/1/" | append: repo_path %}
+{% endif %}
 
 <div class="theme-card" data-category="{{ include.theme.category }}">
     <div class="theme-card-image">
